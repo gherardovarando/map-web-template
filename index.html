@@ -20,19 +20,16 @@
 
 
 <script>
-var basePath = 'map/'
+var basePath = ''
   var map = L.map('map', {
     crs: L.CRS.Simple,
     zoomControl: false,
-    multislice: true, //change if it's not a multislice
-    sliceControl: {
-      position: 'bottomleft'
-    }
+    multislice: false
   });
 
   var builder = L.mapBuilder(map, options);
 
-  loadJSON("map/configuration.json", function(conf) {
+  loadJSON("configuration.json", function(conf) {
     conf.basePath = basePath;
     builder.setConfiguration(conf);
   });

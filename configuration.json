@@ -1,0 +1,255 @@
+{
+  "type": "map",
+  "name": "Hippocampus_vglut1",
+  "authors": "gherardo",
+  "date": "Fri Mar 10 2017",
+  "layers": {
+    "vglut1": {
+      "type": "tileLayer",
+      "name": "vglut1",
+      "tileUrlTemplate": "vglut1_map_tiles/{z}/{x}/{y}.png",
+      "baseLayer": true,
+      "options": {
+        "maxZoom": 5,
+        "maxNativeZoom": 5,
+        "tileSize": [256, 162.90909090904],
+        "depthCal": 2.1,
+        "bounds": [
+          [-162.90909090904, 0],
+          [0, 256]
+        ],
+        "nSlice": 1,
+        "attribution": "@gherardo.varando",
+        "minZoom": 0,
+        "minNativeZoom": 0,
+        "opacity": 1
+      }
+    },
+    "centroids_vGlut1": {
+      "type": "csvTiles",
+      "name": "centroids_vGlut1",
+      "urlTemplate": "points/points_Hipocampo_HBP21_id4_corte_40_vGlut1_X{x}_Y{y}.tif.csv",
+      "options": {
+        "tileSize": 1024,
+        "size": [45056, 28672],
+        "bounds": [
+          [-162.90909090904, 0],
+          [0, 256]
+        ],
+        "minZoom": 8,
+        "color": "red",
+        "fillColor": "red"
+      }
+    },
+    "holes_vglut1_": {
+      "name": "holes_vglut1",
+      "type": "tileLayer",
+      "tileUrlTemplate": "holes_Hipocampo_HBP21_id4_corte_40_vGlut1/holes_Hipocampo_HBP21_id4_corte_40_vGlut1_tiles/{z}/{x}/{y}.png",
+      "options": {
+        "maxZoom": 5,
+        "maxNativeZoom": 5,
+        "tileSize": [256, 162.90909090904],
+        "bounds": [
+          [-162.90909090904, 0],
+          [0, 256]
+        ],
+        "minZoom": 0,
+        "minNativeZoom": 0,
+        "opacity": 0.3
+      }
+    },
+    "validationregions": {
+      "name": "Validation regions",
+      "type": "featureGroup",
+      "layers": {
+        "3": {
+          "latlngs": [
+            [{
+              "lat": -40.72727272727273,
+              "lng": 75.63636363636364
+            }, {
+              "lat": -46.54545454545455,
+              "lng": 75.63636363636364
+            }, {
+              "lat": -46.54545454545455,
+              "lng": 81.45454545454545
+            }, {
+              "lat": -40.72727272727273,
+              "lng": 81.45454545454545
+            }]
+          ],
+          "name": "X13_Y7",
+          "type": "polygon",
+          "options": {
+            "stroke": true,
+            "color": "red",
+            "weight": 4,
+            "opacity": 0.5,
+            "fill": true,
+            "fillColor": "red",
+            "fillOpacity": 0.3
+          }
+        },
+        "5": {
+          "latlngs": [
+            [{
+              "lat": -69.81818181818181,
+              "lng": 151.27272727272728
+            }, {
+              "lat": -75.63636363636364,
+              "lng": 151.27272727272728
+            }, {
+              "lat": -75.63636363636364,
+              "lng": 157.0909090909091
+            }, {
+              "lat": -69.81818181818181,
+              "lng": 157.0909090909091
+            }]
+          ],
+          "name": "X26_Y12",
+          "type": "polygon",
+          "options": {
+            "stroke": true,
+            "color": "red",
+            "weight": 4,
+            "opacity": 0.5,
+            "fill": true,
+            "fillColor": "red",
+            "fillOpacity": 0.3,
+            "clickable": true
+          }
+        },
+        "7": {
+          "latlngs": [
+            [{
+              "lat": -40.72727272727273,
+              "lng": 203.63636363636363
+            }, {
+              "lat": -46.54545454545455,
+              "lng": 203.63636363636363
+            }, {
+              "lat": -46.54545454545455,
+              "lng": 209.45454545454547
+            }, {
+              "lat": -40.72727272727273,
+              "lng": 209.45454545454547
+            }]
+          ],
+          "name": "X35_Y7",
+          "type": "polygon",
+          "options": {
+            "stroke": true,
+            "color": "red",
+            "weight": 4,
+            "opacity": 0.5,
+            "fill": true,
+            "fillColor": "red",
+            "fillOpacity": 0.3,
+            "clickable": true
+          }
+        },
+        "9": {
+          "latlngs": [
+            [{
+              "lat": -46.54545454545455,
+              "lng": 46.54545454545455
+            }, {
+              "lat": -52.36363636363637,
+              "lng": 46.54545454545455
+            }, {
+              "lat": -52.36363636363637,
+              "lng": 52.36363636363637
+            }, {
+              "lat": -46.54545454545455,
+              "lng": 52.36363636363637
+            }]
+          ],
+          "name": "X8_Y8",
+          "type": "polygon",
+          "options": {
+            "stroke": true,
+            "color": "red",
+            "weight": 4,
+            "opacity": 0.5,
+            "fill": true,
+            "fillColor": "red",
+            "fillOpacity": 0.3,
+            "clickable": true
+          }
+        },
+        "11": {
+          "latlngs": [
+            [{
+              "lat": -139.63636363636363,
+              "lng": 58.18181818181818
+            }, {
+              "lat": -145.45454545454547,
+              "lng": 58.18181818181818
+            }, {
+              "lat": -145.45454545454547,
+              "lng": 64
+            }, {
+              "lat": -139.63636363636363,
+              "lng": 64
+            }]
+          ],
+          "name": "X10_Y24",
+          "type": "polygon",
+          "options": {
+            "stroke": true,
+            "color": "red",
+            "weight": 4,
+            "opacity": 0.5,
+            "fill": true,
+            "fillColor": "red",
+            "fillOpacity": 0.3,
+            "clickable": true
+          }
+        },
+        "13": {
+          "latlngs": [
+            [{
+              "lat": -116.36363636363636,
+              "lng": 232.72727272727272
+            }, {
+              "lat": -122.18181818181819,
+              "lng": 232.72727272727272
+            }, {
+              "lat": -122.18181818181819,
+              "lng": 238.54545454545453
+            }, {
+              "lat": -116.36363636363636,
+              "lng": 238.54545454545453
+            }]
+          ],
+          "name": "X40_Y20",
+          "type": "polygon",
+          "options": {
+            "stroke": true,
+            "color": "red",
+            "weight": 4,
+            "opacity": 0.5,
+            "fill": true,
+            "fillColor": "red",
+            "fillOpacity": 0.3,
+            "clickable": true
+          }
+        }
+      },
+      "attribution": "@gherardo.varando"
+    },
+    "guide layer": {
+      "name": "guide layer",
+      "type": "guideLayer",
+      "size": 44,
+      "tileSize": 1,
+      "scale": 0.171875,
+      "alias": "guide layer",
+      "color": "blue"
+    }
+  },
+  "basePath": "",
+  "source": "remote",
+  "minZoom": 0,
+  "maxZoom": 8
+}
