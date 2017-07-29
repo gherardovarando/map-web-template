@@ -1,0 +1,21 @@
+{
+    "date": "Fri May 05 13:33:06 CEST 2017",
+    "maxZoom": 3,
+    "author": "unknown",
+    "maxNativeZoom": 3,
+    "baseLayer": true,
+    "type": "tilesLayer",
+    "customKeys": {
+        "t": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43]
+    },
+    "size_cal": 0.041075999999999994,
+    "depth_cal": 0.0036119999999999998,
+    "tileSize": [88, 256],
+    "name": "GAD67_tiles",
+    "bounds": [
+        [-256, 0],
+        [0, 256]
+    ],
+    "tilesUrlTemplate": "slice{t}\/{z}\/{x}\/{y}.png",
+    "nSlice": 43
+}

@@ -1,0 +1,33 @@
+{
+  "name": "map-web-template",
+  "version": "0.0.1",
+  "description": "template for map page",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gherardovarando/map-web-template.git"
+  },
+  "keywords": [
+    "map"
+  ],
+  "author": "gherardo varando",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gherardovarando/map-web-template/issues"
+  },
+  "homepage": "https://github.com/gherardovarando/map-web-template#readme",
+  "dependencies": {
+    "papaparse": "^4.3.3",
+    "leaflet": "^1.0.3",
+    "leaflet-csvtiles": "github:gherardovarando/leaflet-csvtiles",
+    "leaflet-multislice": "github:gherardovarando/leaflet-multislice",
+    "leaflet-map-builder": "github:gherardovarando/leaflet-map-builder",
+    "leaflet-snap": "0.0.4"
+  }
+}

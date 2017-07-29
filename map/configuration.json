@@ -1,0 +1,80 @@
+{
+  "name": "prova multislice",
+  "type": "map",
+  "layers": {
+    "multi": {
+      "type": "tileLayerMultiSlice",
+      "name": "multi slice",
+      "tileUrlTemplate": "GAD67_tiles/slice{slice}/{z}/{x}/{y}.png",
+      "baseLayer": true,
+      "options": {
+        "maxZoom": 8,
+        "minZoom": 0,
+        "minSlice": 1,
+        "maxSlice": 43,
+        "maxNativeZoom": 3,
+        "tileSize": [88, 256],
+        "bounds": [
+          [-256, 0],
+          [0, 256]
+        ]
+      }
+    },
+    "multi2": {
+      "type": "tileLayerMultiSlice",
+      "name": "ten slices",
+      "tileUrlTemplate": "tenslices/slice{slice}/{z}/{x}/{y}.png",
+      "baseLayer": true,
+      "options": {
+        "maxZoom": 8,
+        "minZoom": 0,
+        "minSlice": 1,
+        "maxSlice": 10,
+        "maxNativeZoom": 3,
+        "tileSize": [88, 256],
+        "bounds": [
+          [-256, 0],
+          [0, 256]
+        ]
+      }
+    },
+    "points": {
+      "type": "csvTiles",
+      "urlTemplate": "points/points_heic1112a_X{x}_Y{y}.tif.csv",
+      "options": {
+        "encoding": "utf8",
+        "tileSize": [1000, 1000],
+        "size": 6856,
+        "scale": [0.03732383459, -0.03733955659],
+        "minZoom": 2,
+        "radius": 3,
+        "localRS": true,
+        "grid": true,
+        "color": "red",
+        "fillColor": "orange",
+        "fillOpacity": 0.8,
+        "opacity": 1,
+        "weight": 2,
+        "radius": 3,
+        "attribution": "<a href='https://github.com/gherardovarando/leaflet-csvtiles'>csv-tiles</a> "
+      }
+    },
+    "tiles": {
+      "type": "tileLayer",
+      "baseLayer": true,
+      "tileUrlTemplate": "heic1112a_tiles/{z}/{x}/{y}.png",
+      "options": {
+        "maxZoom": 8,
+        "minZoom": 0,
+        "maxNativeZoom": 5,
+        "tileSize": [241,
+          256
+        ],
+        "bounds": [
+          [-256, 0],
+          [0, 256]
+        ]
+      }
+    }
+  }
+}
