@@ -189,7 +189,7 @@ process.umask = function() { return 0; };
 },{}],3:[function(require,module,exports){
 require('leaflet');
 //require('leaflet-geometryutil');
-require('leaflet-draw');
+const leafletDraw = require('leaflet-draw');
 window.Papa = require('papaparse');
 require('leaflet-csvtiles');
 require('leaflet-multislice');
