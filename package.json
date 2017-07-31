@@ -23,11 +23,13 @@
   },
   "homepage": "https://github.com/gherardovarando/map-web-template#readme",
   "dependencies": {
-    "papaparse": "^4.3.3",
     "leaflet": "^1.0.3",
     "leaflet-csvtiles": "github:gherardovarando/leaflet-csvtiles",
-    "leaflet-multislice": "github:gherardovarando/leaflet-multislice",
+    "leaflet-draw": "^0.4.10",
+    "leaflet-geometryutil": "^0.8.0",
     "leaflet-map-builder": "github:gherardovarando/leaflet-map-builder",
-    "leaflet-snap": "0.0.4"
+    "leaflet-multislice": "github:gherardovarando/leaflet-multislice",
+    "leaflet-snap": "0.0.4",
+    "papaparse": "^4.3.3"
   }
 }
