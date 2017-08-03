@@ -1,0 +1,53 @@
+{
+  "dev": true,
+  "controls": {
+    "draw": {
+      "position": "bottomleft",
+      "draw": {
+        "polyline": false,
+        "marker": true,
+        "polygon": {
+          "allowIntersection": false,
+          "shapeOptions": {
+            "stroke": true,
+            "color": "#ed8414",
+            "weight": 4,
+            "opacity": 1,
+            "fill": true,
+            "fillColor": null,
+            "fillOpacity": 0.5,
+            "clickable": true
+          }
+        },
+        "rectangle": {
+          "shapeOptions": {
+            "stroke": true,
+            "color": "#ed8414",
+            "weight": 4,
+            "opacity": 1,
+            "fill": true,
+            "fillColor": null,
+            "fillOpacity": 0.5,
+            "clickable": true
+          }
+        },
+        "circle": false
+      },
+      "edit": {
+        "allowIntersection": false
+      }
+    },
+    "zoom": true,
+    "layers": true
+  },
+  "tooltip": {
+    "polygon": true,
+    "rectangle": true,
+    "marker": true
+  },
+  "popup": {
+    "marker": true,
+    "polygon": true,
+    "rectangle": true
+  }
+}

@@ -1,6 +1,6 @@
 require('leaflet');
-//require('leaflet-geometryutil');
-//const leafletDraw = require('leaflet-draw');
+require('leaflet-geometryutil');
+require('leaflet-draw');
 window.Papa = require('papaparse');
 require('leaflet-csvtiles');
 require('leaflet-multislice');
@@ -22,58 +22,3 @@ window.loadJSON =
     request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
     request.send(null);
   }
-
-
-window.options = {
-  dev: true,
-  controls: {
-    draw: {
-      position: 'bottomleft',
-      draw: {
-        polyline: false,
-        marker: true,
-        polygon: {
-          allowIntersection: false,
-          shapeOptions: {
-            stroke: true,
-            color: "#ed8414",
-            weight: 4,
-            opacity: 1,
-            fill: true,
-            fillColor: null, //same as color by default
-            fillOpacity: 0.5,
-            clickable: true
-          }
-        },
-        rectangle: {
-          shapeOptions: {
-            stroke: true,
-            color: "#ed8414",
-            weight: 4,
-            opacity: 1,
-            fill: true,
-            fillColor: null, //same as color by default
-            fillOpacity: 0.5,
-            clickable: true
-          }
-        },
-        circle: false
-      },
-      edit: {
-        allowIntersection: false
-      }
-    },
-    zoom: true,
-    layers: true
-  },
-  tooltip: {
-    polygon: true,
-    rectangle: true,
-    marker: true
-  },
-  popup: {
-    marker: true,
-    polygon: true,
-    rectangle: true
-  }
-}

@@ -6,8 +6,12 @@
   <meta charset="utf-8">
 
   <title>map name here</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-  <script src="bounded.js"></script>
+
+  <script src="../lib/bounded.js"></script>
+
+  <link rel="stylesheet" href="../style/leaflet.css" />
+
+  <link rel="stylesheet" href="../style/leaflet.draw.css" />
 
 
 </head>
@@ -20,11 +24,11 @@
 
 
 <script>
-var basePath = 'map/'
+
   var map = L.map('map', {
     crs: L.CRS.Simple,
     zoomControl: false,
-    multislice: true, //change if it's not a multislice
+    multislice: false, //change if it's not a multislice
     sliceControl: {
       position: 'bottomleft'
     }
@@ -32,10 +36,14 @@ var basePath = 'map/'
 
   var builder = L.mapBuilder(map, options);
 
-  loadJSON("map/configuration.json", function(conf) {
-    conf.basePath = basePath;
+  loadJSON("options.json", function(opt){
+    builder.setOptions(opt);
+  });
+
+  loadJSON("configuration.json", function(conf) {
     builder.setConfiguration(conf);
   });
+
   map.fitWorld();
   map.setSlice(1);
 </script>
