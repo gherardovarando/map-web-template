@@ -11,8 +11,6 @@
 
   <link rel="stylesheet" href="../style/leaflet.css" />
 
-  <link rel="stylesheet" href="../style/leaflet.draw.css" />
-
 
 </head>
 
@@ -34,7 +32,7 @@
     }
   });
 
-  var builder = L.mapBuilder(map, options);
+  var builder = L.mapBuilder(map);
 
   loadJSON("options.json", function(opt){
     builder.setOptions(opt);
