@@ -3,7 +3,7 @@ require('leaflet-geometryutil');
 //require('leaflet-draw');
 window.Papa = require('papaparse');
 require('leaflet-csvtiles');
-require('leaflet-multislice');
+require('leaflet-multilevel');
 require('leaflet-snap');
 require('leaflet-map-builder');
 

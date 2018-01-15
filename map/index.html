@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title id="title">map name here</title>
+
+  <script src="../lib/bounded.js"></script>
+
+  <link rel="stylesheet" href="../style/leaflet.css" />
+
+
+</head>
+
+<body>
+
+  <div id="map" style="height:600px; width: 800px;"></div>
+
+</body>
+
+
+<script>
+
+  var map = L.map('map', {
+    crs: L.CRS.Simple,
+    zoomControl: false,
+    multilevel: true, //change if it's not a multislice
+    levelControl: {
+      position: 'bottomleft'
+    }
+  });
+
+  var builder = L.mapBuilder(map);
+
+  loadJSON("options.json", function(opt){
+    builder.setOptions(opt);
+  });
+
+  loadJSON("configuration.json", function(conf) {
+    builder.setConfiguration(conf);
+    let title = document.getElementById("title")
+    title.innerHTML=conf.title || "map";
+  });
+
+  map.fitWorld();
+  map.setLevel(1);
+</script>
+
+
+</html>

@@ -1,0 +1,25 @@
+{
+  "dev": false,
+  "controls": {
+    "draw": false,
+    "zoom": true,
+    "layers": {
+      "autoZIndex": false,
+      "hideSingleBase": true
+    }
+  },
+  "tooltip": {
+    "polygon": true,
+    "rectangle": true,
+    "marker": true,
+    "circle": true,
+    "circleMarker": true
+  },
+  "popup": {
+    "marker": true,
+    "polygon": true,
+    "rectangle": true,
+    "circle": true,
+    "circleMarker": true
+  }
+}

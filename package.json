@@ -7,6 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
+    "make": "browserify index.js -o lib/bounded.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,12 +24,11 @@
   },
   "homepage": "https://github.com/gherardovarando/map-web-template#readme",
   "dependencies": {
-    "leaflet": "^1.0.3",
-    "leaflet-csvtiles": "github:gherardovarando/leaflet-csvtiles",
-    "leaflet-draw": "^0.4.10",
+    "leaflet": "^1.3.0",
+    "leaflet-csvtiles": "^0.3.1",
     "leaflet-geometryutil": "^0.8.0",
-    "leaflet-map-builder": "github:gherardovarando/leaflet-map-builder",
-    "leaflet-multislice": "github:gherardovarando/leaflet-multislice",
+    "leaflet-map-builder": "^0.3.1",
+    "leaflet-multilevel": "0.0.1",
     "leaflet-snap": "0.0.4",
     "papaparse": "^4.3.3"
   }
